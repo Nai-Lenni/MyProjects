@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <!-- Your Basic Site Informations -->
+    <title>Services - Sevenz Advisory & Outsourcing </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Sevenz Advisory & Outsorcing helps you in all your accounting needs & in business advisory.">
+    <meta name="keywords" content="Accountant in Nairobi, Income tax, Quick books, Tax return, Bookkeeping, CPA, VAT, Business Setup, Business Advisory">
+    <meta name="author" content="Sevenz">
+    
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Roboto:100,300,300i,400,400i,500,700,900" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/jquery.scrollbar.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/slider-pro.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Custom Colors -->
+    <link rel="stylesheet" href="css/colors/blue/color.css">
+    <!--<link rel="stylesheet" href="css/colors/orange/color.css">-->
+    <!--<link rel="stylesheet" href="css/colors/pink/color.css">-->
+    <!--<link rel="stylesheet" href="css/colors/purple/color.css">-->
+    <!--<link rel="stylesheet" href="css/colors/yellow/color.css">-->
+    
+   
+    
+    <noscript><link rel="stylesheet" href="css/no-js.css"></noscript>
+    
+    <!-- Favicons -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- Social icons -->
+ <style>
+  :root{
+    --icon-size: 25px;    /* change globally */
+    --gap: 12px;
+    
+  }
+   .service-container {
+      background: #fff;
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      text-align: center;
+      margin-left: 30%;
+      margin-bottom: 10%;
+    }
+
+    h2 {
+      font-size: 22px;
+      color: #0f2342;
+      margin-bottom: 25px;
+      line-height: 1.4;
+      text-align: center;
+    }
+
+    label {
+      font-weight: 600;
+      color: #333;
+      display: block;
+      text-align: left;
+      margin-bottom: 6px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+      margin-bottom: 18px;
+      box-sizing: border-box;
+      transition: border-color 0.3s;
+    }
+
+    input:focus {
+      border-color: #4a6cf7;
+      outline: none;
+    }
+
+    input[readonly] {
+      background-color: #f1f3f6;
+      color: #555;
+      cursor: not-allowed;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4a6cf7;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #3852d0;
+    }
+
+    /* Success message */
+    .success-message {
+      display: none;
+      color: #256d3c;
+      background-color: #e7f8ef;
+      border: 1px solid #a7e2b3;
+      border-radius: 8px;
+      padding: 20px;
+      font-weight: 500;
+      text-align: center;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    /* ✅ Mobile Responsiveness */
+    @media (max-width: 480px) {
+      .service-container {
+        padding: 20px;
+        margin-left: 2%;
+        width: 95%;
+      }
+
+      form h2 {
+        font-size: 18px;
+      }
+
+      input, button {
+        font-size: 14px;
+      }
+    }
+
+ 
+
+ </style>
+
+</head>
+
+<body>
+
+  <div class="call-float-wrapper">
+  <a href="tel:+254114038747" class="call-float" id="callBtn">
+    <i class="fas fa-phone call-icon"></i>
+    <span class="call-badge">Call Us</span>
+  </a>
+
+  
+  <div class="call-popup" id="callPopup">
+    <div class="call-popup-content">
+      <p><strong>Call us:</strong></p>
+      <p class="phone-number">+254 114 038 747</p>
+      <button class="copy-btn" onclick="copyPhone()">
+        <i class="fas fa-copy"></i> Copy
+      </button>
+      <button class="close-popup" onclick="document.getElementById('callPopup').style.display='none'">
+        ×
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Detect if mobile (has tel: support)
+  const isMobile = /iPhone|iPad|iPod|Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  const callBtn = document.getElementById('callBtn');
+  const popup = document.getElementById('callPopup');
+
+  if (!isMobile) {
+    callBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      popup.style.display = 'block';
+    });
+  }
+
+  // Copy to clipboard
+  function copyPhone() {
+    navigator.clipboard.writeText('+254114038747').then(() => {
+      const btn = document.querySelector('.copy-btn');
+      const original = btn.innerHTML;
+      btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+      setTimeout(() => btn.innerHTML = original, 2000);
+    });
+  }
+</script>
+
+    <!-- #nav-mobile -->
+<nav id="nav-mobile">
+    <div class="scrollbar-inner">
+        <button type="button" class="navbar-btn-close"><ion-icon name="close-sharp" size="large" class="close"></ion-icon></button>
+        <div class="navbar-menu">
+            <ul class="nav">
+                <li class="menu-item current-menu-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="aboutus.html">About Us</a>
+                </li>
+<li class="menu-item mega-menu-item menu-item-has-children">
+     <a href="#">Services <ion-icon name="chevron-down" class="toggle-sub"></ion-icon></a>
+    <div class="sub-mega-menu">
+    <div class="container">
+      <div class="mega-columns">
+
+        <div class="mega-column">
+          <a href="BusinessManagement.html">Business Management & Consultancy</a>
+          <a href="Management.html">Management Trainings</a>
+          <a href="RecordManagement.html">Records Management & Training</a>
+          <a href="CreditManagement.html">Credit Management Services</a>
+          <a href="OutsourcedCFO.html">Outsourced CFO Services</a>
+          <a href="Bookkeeping.html">Book-keeping Services</a>
+          <a href="Virtualbackend.html">Virtual Back End Support</a>
+          <a href="Local.html">Local Office Representation</a>
+          <a href="SupplyChain.html">Supply Chain Management Advisory</a>
+          <a href="MarketingManagement.html">Marketing Management Advisory</a>
+          <a href="OutsourcedIT.html">Outsourced IT Solutions</a>
+                  
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+
+
+<li class="menu-item mega-menu-item menu-item-has-children">
+  <a href="#">Industries &nbsp; <ion-icon name="chevron-down" class="toggle-sub"></ion-icon></a>
+  <div class="sub-mega-menu">
+    <div class="container">
+      <div class="mega-columns">
+        <div class="mega-column">
+          <a href="FinancialServices.html">Financial Services</a>
+          <a href="Healthcare.html">Healthcare</a>
+          <a href="Manufacturing.html">Manufacturing</a>
+          <a href="EducationSector.html">Education Sector</a>
+          <a href="Technology.html">Technology</a>
+          <a href="Retail&Consumer.html">Retail & Consumer Goods</a>
+          <a href="Hospitality.html">Hospitality & Tourism</a>
+          <a href="ProfessionalServices.html">Professional Services</a>
+          <a href="Energy&Utilities.html">Energy & Utilities</a>
+          <a href="Agriculture.html">Agriculture</a>
+          <a href="Tradeindustry.html">Trade Industry</a>
+          <a href="BeautyIndustry.html">Beauty Industry</a>
+          <a href="Realestate.html">Real Estate & Constructions</a>
+          <a href="Nonprofit.html">Non Profit & Public Sectors</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+
+<li class="menu-item mega-menu-item menu-item-has-children">
+    <a href="#">Our Partners <ion-icon name="chevron-down" class="toggle-sub"></ion-icon></a>
+
+    <div class="sub-mega-menu">
+    <div class="container">
+      <div class="mega-columns">
+
+        <div class="mega-column">
+          <a href="OAS.html">A ONE OUTSOURCING ACCOUNTING</a>
+          <a href="odoo.html">ODOO</a>
+          <a href="bizkit.html">BIZKIT</a>
+          
+          
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+                </li>
+                <li>
+                    <a href="FreeConsultation.html">Consultation</a>
+                </li>
+                <li>
+                    <a href="contactus.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- #nav-mobile end -->
+    <!-- #nav-mobile end -->
+
+    <!-- #body-wrap -->
+    <div id="body-wrap">
+
+        <!-- #header -->
+        <header id="header">
+
+            <!-- #nav-mobile-top -->
+            <div id="nav-mobile-top">
+
+                <!-- .container -->
+                <div class="container-fluid">
+                    <div class="navmenu">
+
+                        <button type="button" class="navbar-btn-toggle"><ion-icon name="menu"></ion-icon></button>
+
+                        <div class="navbar-logo">
+                            <a href="index.html"><img src="images/sevenzlogo.png" alt="Logo"></a> <!-- site logo -->
+                        </div>
+
+                    </div>
+                </div>
+                <!-- .container end -->
+
+            </div>
+            <!-- #nav-mobile-top end -->
+
+            <!-- #navigation -->
+            <nav id="navigation">
+
+                <!-- .navtop -->
+                <div class="navtop">
+
+                    <!-- .container -->
+                    <div class="container">
+
+                        <div class="nav-txt">
+                            <p><ion-icon name="phone-portrait"></ion-icon> Call Us On: <strong><a
+                                        href="#"><u>+254 114 038747</u> | </a></strong>
+                                <strong>Email: </strong><a style="text-decoration: none;"
+                                    href="https://mail.google.com/mail/?view=cm&fs=1&to=info@sevenzoutsourcing.com"
+                                    target="_blank"><u> info@sevenzoutsourcing.com</u></a> <br>
+                                    
+                            </p>
+                        </div>
+
+                        <div class="social-links" aria-label="Social links">
+                            <a href="https://www.facebook.com/profile.php?id=61558659546728" target="_blank" title="Facebook"><ion-icon name="logo-facebook" style="font-size: large;"></ion-icon></a>
+                            <a href="https://www.tiktok.com/@sevenzoutsourcing" target="_blank" title="Tiktok"><ion-icon name="logo-tiktok" style="font-size: large;"></ion-icon></a>
+                            <a href="https://www.x.com/sevenzadvisory" target="_blank" title="X">
+                                <svg class="x-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="white" aria-hidden="true">
+                               <path d="M18.244 2H21.5l-7.557 8.5L22 22h-5.657l-4.6-6.1L6.8 22H3.5l8.064-9.083L2 2h5.743l4.147 5.523L18.244 2zm-2.05 18h2.215L8.84 4h-2.3l9.654 16z"/>
+                            </svg> </a>
+                            <a href="https://www.instagram.com/sevenzoutsourcing" target="_blank" title="Instagram"><ion-icon name="logo-instagram" style="font-size: large;"></ion-icon></a>
+                            <a href="https://www.linkedin.com/company/sevenzy-advisory-and-outsourcing-solutions-ltd" target="_blank" title="LinkedIn"><ion-icon name="logo-linkedin" style="font-size: large;"></ion-icon></a>
+                            <a href="https://www.youtube.com/sevenzoutsourcing" target="_blank" title="Youtube"><ion-icon name="logo-youtube" style="font-size: large;"></ion-icon></a>
+                            
+                        </div>
+
+                    </div>
+                    <!-- .container end -->
+
+                </div>
+                <!-- .navtop end -->
+
+                <!-- .navbar -->
+                <div class="navbar">
+
+                    <!-- .container -->
+                    <div class="container">
+                        <div class="navbar-wrap">
+
+                            <div class="navbar-logo">
+                                <a href="index.html"><img src="images/sevenzlogo.png" alt="Logo"></a> <!-- site logo -->
+                            </div>
+
+                            <div class="navbar-menu">
+                                <ul class="nav">
+                                    <li class="current-menu-item">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="aboutus.html">About Us</a>
+                                    </li>
+
+<li class="menu-item mega-menu-item menu-item-has-children">
+  <a href="#">Services<ion-icon name="chevron-down"></ion-icon></a>
+
+  <div class="sub-mega-menu">
+    <div class="container">
+      <div class="mega-columns">
+
+        <!-- Column 1 -->
+        <div class="mega-column">
+          <h4>Business Advisory</h4>
+          <ul>
+            <li><a href="BusinessManagement.html">Business Management & Consultancy</a></li>
+            <li><a href="Management.html">Management Trainings</a></li>
+            <li><a href="RecordManagement.html">Records Management & Training</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="mega-column">
+          <h4>Financial & Administrative</h4>
+          <ul>
+            <li><a href="CreditManagement.html">Credit Management Services</a></li>
+            <li><a href="OutsourcedCFO.html">Outsourced CFO Services</a></li>
+            <li><a href="Bookkeeping.html">Book-keeping Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="mega-column">
+          <h4>Operations Support</h4>
+          <ul>
+            <li><a href="Virtualbackend.html">Virtual Back End Support</a></li>
+            <li><a href="Local.html">Local Office Representation</a></li>
+            <li><a href="SupplyChain.html">Supply Chain Management Advisory</a></li>
+            <li><a href="MarketingManagement.html">Marketing Management Advisory</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="mega-column">
+          <h4>Technology Solutions</h4>
+          <ul>
+            <li><a href="OutsourcedIT.html">Outsourced IT Solutions</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</li>
+
+                                        <li class="menu-item mega-menu-item menu-item-has-children">
+                                        <a href="#">Industries<ion-icon name="chevron-down"></ion-icon></a>
+                                        <div class="sub-mega-menu">
+                                            <div class="container">
+                                                <ul>
+                                                    <li class="menu-item menu-item-has-children current-menu-item">
+
+                                                        <ul>
+                                                            <li class="menu-item current-menu-item"><a
+                                                                    href="FinancialServices.html">FINANCIAL SERVICES</a>
+                                                            </li>
+                                                            <li class="menu-item"><a
+                                                                    href="Healthcare.html">HEALTHCARE</a></li>
+                                                            <li class="menu-item"><a
+                                                                    href="Manufacturing.html">MANUFACTURING</a></li>
+                                                            <li class="menu-item"><a
+                                                                    href="EducationSector.html">EDUCATION SECTOR</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-item menu-item-has-children">
+
+                                                        <ul>
+                                                            <li class="menu-item"><a
+                                                                    href="Technology.html">TECHNOLOGY</a></li>
+                                                            <li class="menu-item"><a href="Retail&Consumer.html">RETAIL
+                                                                    & CONSUMER GOODS</a></li>
+                                                            <li class="menu-item"><a href="Hospitality.html">HOSPITALITY
+                                                                    & TOURISM</a></li>
+                                                            <li class="menu-item"><a
+                                                                    href="ProfessionalServices.html">PROFESSIONAL
+                                                                    SERVICES</a></li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="menu-item menu-item-has-children">
+
+                                                        <ul>
+                                                            <li class="menu-item"><a href="Energy&Utilities.html">ENERGY
+                                                                    & UTILITIES</a></li>
+                                                            <li class="menu-item"><a
+                                                                    href="Agriculture.html">AGRICULTURE</a></li>
+                                                            <li class="menu-item"><a href="Tradeindustry.html">TRADE
+                                                                    INDUSTRY</a></li>
+                                                            <li class="menu-item"><a href="BeautyIndustry.html">BEAUTY
+                                                                    INDUSTRY</a></li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="menu-item menu-item-has-children">
+
+                                                        <ul>
+                                                            <li class="menu-item"><a href="Realestate.html">REAL ESTATE
+                                                                    & CONSTRUCTIONS</a></li>
+                                                            <li class="menu-item"><a href="Nonprofit.html">NON PROFIT &
+                                                                    PUBLIC SECTORS</a></li>
+                                                        </ul>
+                                                    </li>
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+<li class="menu-item mega-menu-item menu-item-has-children">
+  <a href="#">Partners<ion-icon name="chevron-down"></ion-icon></a>
+
+  <div class="sub-mega-menu">
+    <div class="container">
+      <div class="mega-columns">
+
+        <div class="mega-column">
+          <h4><a href="OAS.html">A ONE OUTSOURCING ACCOUNTING SERVICES</a></h4>
+															        
+        </div>
+        <div class="mega-column">
+          <h4><a href="odoo.html">ODOO</a></h4>
+          
+        </div>
+        <div class="mega-column">
+          <h4><a href="bizkit.html">BIZKIT</a></h4>
+          
+        </div>
+         
+
+     </div>
+    </div>
+  </div>
+</li>
+
+                                    <li>
+                                        <a href="FreeConsultation.html">Consultation</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="contactus.html">Contact Us</a>
+
+                                    </li>
+                                </ul>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- .container end -->
+
+                </div>
+                <!-- .navbar end -->
+
+            </nav>
+            <!-- #navigation end -->
+            
+            <!-- .sub-header -->
+            <div class="sub-header">
+            	
+                <!-- .container -->
+                <div class="container">
+                    
+                    <h4 class="header-title">Business Management</h4>
+                    <div class="breadcrumbs">
+                    	<a href="index.html">Home</a> <span class="sep">/</span> <span class="current">Business Management</span>
+                    </div>
+                    
+                </div>
+                <!-- .container end -->
+                
+            </div>
+            <!-- .sub-header end -->
+            
+        </header>
+        <!-- #header end -->
+        
+        <!-- #content -->
+        <div id="content">
+        	
+            <!-- .container -->
+            <div class="container padding-top80 padding-bottom80">
+                
+                <ul class="nav nav-tabs affa-nav-tabs2 nav-tabs-center margin-bottom50" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#tabpanel31" aria-controls="tabpanel31" role="tab" data-toggle="tab"><b>BUSINESS MANAGEMENT SERVICES</b></a>
+                    </li>
+                    
+                </ul>
+                
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade active in" id="tabpanel31"> <!-- 1 -->
+                    	<div class="row">
+                        	
+                            <div class="col-md-10 col-lg-6 col-md-offset-1 col-lg-offset-0 margin-bottom40 margin-bottom0-lg">
+                            	<figure>
+                                	
+                                    <img src="images/content/portfolios/full/4.jpg" alt="Image">
+                                </figure>
+                            </div>
+                            
+                            <div class="col-md-10 col-lg-6 col-md-offset-1 col-lg-offset-0">
+                            	<div class="padding-top4-lg">
+                                	<h4 class="text-uppercase"><strong>BUSINESS MANAGEMENT AND CONSULTANCY</strong></h4>
+                                    <p>At Sevenz Advisory and Outsourcing Business Solutions Ltd, we are well equipped to support our clients in preparing management reports, forecasts and analyze operating budgets. Our scalable business model allows you to leverage Accounting. Some of the segments include but not limited to;</p>
+									<p><h5>1.1.1 Supervision and review of accounting staff’s work</h5>
+Supervision and review of accounting staff's work are critical aspects of ensuring accuracy, compliance, and efficiency in financial reporting and accounting processes. Here’s Sevenz guide for effective supervising and reviewing accounting staff's work led by our team of professionals:
+</p>
+                                    <p><h6>i.	Establish Clear Expectations</h6></p><p>Clearly communicate job responsibilities, performance expectations, and quality standards to accounting staff.Provide written job descriptions, performance objectives, and key performance indicators (KPIs) to guide staff in their roles and responsibilities.</p>
+									<p class="margin-bottom0">At Sevenz Advisory & Outsourcing Solutions Ltd, we prioritize professionalism, integrity, and excellence in everything we do. We take pride in building long-term relationships with our clients, earning their trust through our dedication to delivering superior results.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <!-- .container end -->
+
+            <div class="service-container">
+    <!-- Form Section -->
+     <form id="serviceForm" action="https://formspree.io/f/xkgqavqw" method="POST">
+  <h2>Requesting for this service?<br>Sign up here to be assisted.</h2>
+
+  <label for="name">Full Name</label>
+  <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+  <label for="email">Email Address</label>
+  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+  <label for="phone">Phone Number</label>
+  <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+  <label for="service">Service Requested</label>
+  <input type="text" id="service" name="service" value="Business Management & Consultancy" readonly>
+
+  <button type="submit">Submit Request</button>
+</form>
+
+<!-- Success Message -->
+<div class="success-message" id="successMessage" style="display:none;">
+  ✅ Your message has been delivered.<br>
+  Kindly wait for feedback.<br>
+  Thank you for contacting us.
+</div>
+
+<script>
+  const form = document.getElementById('serviceForm');
+  const successMessage = document.getElementById('successMessage');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        form.style.display = 'none';
+        successMessage.style.display = 'block';
+      } else {
+        alert("Oops! Something went wrong, please try again later.");
+      }
+    } catch (error) {
+      alert("Network error. Please check your connection and try again.");
+    }
+  });
+</script>
+            </div>
+
+        
+            
+           
+           <!-- .bg-color -->
+            <div class="bg-color text-white padding-top40 padding-bottom40">
+                
+				<!-- .container -->
+				<div class="container">
+                    
+                    <div class="affa-call-action2">
+                        <div class="call-action-txt">
+                        	<h2>Let's grab coffee together!!</h2>
+                            <p>At Sevenz Advisory & Outsourcing Solutions, we're passionate about helping businesses like yours succeed. </p>
+                        </div>
+                        <div class="call-action-btn">
+                        	<a href="contactus.html" class="btn-custom btn-border btn-white">Get In Touch</a>
+                        </div>
+                    </div>
+                    
+                </div>
+				<!-- .container end -->
+				
+            </div>
+            <!-- .bg-color end -->
+            
+        </div>
+        <!-- #content end -->
+
+        <!--WhatsApp button-->
+
+<a href="https://wa.me/254114038747?text=Hello%20Sevenz%20Advisory!%20I%20need%20help%20with..." 
+   class="whatsapp-float" 
+   target="_blank">
+  <ion-icon name="logo-whatsapp" class="whatsapp-icon"></ion-icon>
+</a>
+
+        <!--Live Chat (chatbot)-->
+
+<!-- Chat Button -->
+<img src="images/chat.jpg" alt="" class="chatBtn" id="chatBtn">
+<!-- Chat Window -->
+<div class="chat-window" id="chatWindow">
+  <div class="chat-header">SAOS Live Support<br><p style="font-size: 75%;" >(Click LiveChat button to Close)</p></div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="Type your message..." />
+    <button id="sendBtn1">Send</button>
+  </div>
+</div>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<script>
+  const chatBtn = document.getElementById("chatBtn");
+  const chatWindow = document.getElementById("chatWindow");
+  const chatBody = document.getElementById("chatBody");
+  const userInput = document.getElementById("userInput");
+  const sendBtn1 = document.getElementById("sendBtn1");
+
+  let step = 0;
+  let userName = "", userService = "Financial Management", userEmail = "", userNumber = "";
+
+  chatBtn.addEventListener("click", () => {
+    chatWindow.style.display = chatWindow.style.display === "flex" ? "none" : "flex";
+    if (step === 0) {
+      addMessage("Hello! Welcome to Sevenz Advisory & Outsourcing Solutions Ltd.", "bot");
+      setTimeout(() => addMessage("May I know your name?", "bot"), 1000);
+      step = 1;
+    }
+  });
+
+  sendBtn1.addEventListener("click", sendMessage);
+  userInput.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") sendMessage();
+  });
+
+  function sendMessage() {
+    const msg = userInput.value.trim();
+    if (!msg) return;
+    addMessage(msg, "user");
+    userInput.value = "";
+    setTimeout(() => handleBotResponse(msg), 700);
+  }
+
+  function addMessage(text, sender) {
+    const message = document.createElement("div");
+    message.classList.add("message", sender);
+    message.textContent = text;
+    chatBody.appendChild(message);
+    chatBody.scrollTop = chatBody.scrollHeight;
+  }
+
+  function handleBotResponse(userMsg) {
+    if (step === 1) {
+      userName = userMsg;
+      addMessage(`Hi ${userName}! How can we assist you today?`, "bot");
+      step = 2;
+    } else if (step === 2) {
+      userService = userMsg;
+      addMessage("Okay, your request has been shared with our team. Kindly share your email and number for quick contact. (Separate them with a comma)", "bot");
+      step = 3;
+    } else if (step === 3) {
+      const parts = userMsg.split(",");
+      if (parts.length < 2) {
+        addMessage("Please provide both your email and phone number, separated by a comma.", "bot");
+        return;
+      }
+
+      userEmail = parts[0].trim();
+      userNumber = parts[1].trim();
+
+      // Validate email format
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!emailPattern.test(userEmail)) {
+        addMessage("Invalid email format. Please enter a valid email like example@gmail.com", "bot");
+        return;
+      }
+
+      addMessage("Thank you for choosing us! You will be contacted ASAP.", "bot");
+        setTimeout(() => {
+      addMessage("You can also talk to one of our agents directly by dialling 0114038747 to jump the queue.", "bot");
+             }, 1000);
+      sendToFormspree();
+       step = 4;
+    }
+  }
+
+  function sendToFormspree() {
+    const data = {
+      name: userName,
+      email: userEmail,
+      number: userNumber,
+      service: userService
+    };
+
+    fetch("https://formspree.io/f/xkgqavqw", { 
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(data)
+    })
+    .then(res => console.log("Form submitted successfully"))
+    .catch(err => console.error("Error sending data:", err));
+  }
+</script>
+        
+        <!-- #bottom -->
+        <div id="bottom" class="bottom-3">
+            
+            <!-- .container -->
+            <div class="container">
+                
+                <!-- .footer-widgets -->
+                <div class="footer-widgets">
+                    
+                    <!-- .row -->
+                    <div class="row">
+                        
+                        <div class="col-sm-3">
+                            <div class="widget">
+                                <div class="widget_text">
+                                    <img src="images/logo-white.png" alt="Logo" class="margin-bottom20">
+                                    <p>Welcome to SEVENZ, where expertise meets experience in providing comprehensive business solutions tailored to your needs. With over 12 years of dedicated service, we have established ourselves as trusted advisors in the realms of business management and consultancy.</p>
+                                    <div class="social-links1" aria-label="Social links">
+                            <a class="icon-facebook round" href="https://www.facebook.com/profile.php?id=61558659546728" target="_blank" title="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a class="icon-tiktok round" href="https://www.tiktok.com/@sevenzoutsourcing" target="_blank" title="Tiktok"><ion-icon name="logo-tiktok"></ion-icon></a>
+                            <a class="icon-x round" href="https://www.x.com/sevenzadvisory" target="_blank" title="X">
+                                <svg class="x-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" fill="grey" aria-hidden="true">
+                               <path d="M18.244 2H21.5l-7.557 8.5L22 22h-5.657l-4.6-6.1L6.8 22H3.5l8.064-9.083L2 2h5.743l4.147 5.523L18.244 2zm-2.05 18h2.215L8.84 4h-2.3l9.654 16z"/>
+                            </svg> </a>
+                            <a class="icon-instagram round" href="https://www.instagram.com/sevenzoutsourcing" target="_blank" title="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                            <a class="icon-linkedin round" href="https://www.linkedin.com/company/sevenzy-advisory-and-outsourcing-solutions-ltd" target="_blank" title="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+                            <a class="icon-youtube round" href="https://www.youtube.com/sevenzoutsourcing" target="_blank" title="Youtube"><ion-icon name="logo-youtube"></ion-icon></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-3">
+                            <div class="widget">
+                                <div class="widget_recent_entries">
+                                    <h4 class="widget-title">More Info</h4>
+                                    <ul>
+                                        <li><a href="OutsourcedCFO.html">Outsourced CFO Services</a></li>
+                                        <li><a href="BookKeeping.html">Book Keeping Services</a></li>
+                                        <li><a href="Management.html">Management Training</a></li>
+                                        <li><a href="OutsourcedIT.html">Outsourced IT Services</a></li>
+                                        <li><a href="Virtualbackend.html">Virtual Back end Support</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-3">
+                            <div class="widget">
+                                <div class="widget_recent_entries">
+                                    <h4 class="widget-title">More Links</h4>
+                                    <ul>
+                                        <li><a href="aboutus.html">About Us</a></li>
+                                        <li><a href="#">Privacy & Policy</a></li>
+                                        <li><a href="#">Terms of Service</a></li>
+                                        <li><a href="#">Terms & Conditions</a></li>
+                                        <li><a href="contactus.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+						
+						<div class="col-sm-3">
+                            <div class="widget">
+                                <div class="widget_text">
+                                    <h4 class="widget-title">Contact Info</h4>
+                                    <p>Sevenz Advisory & Outsorcing Solutions Limited.</p>
+                                    <div class="list-icon">
+                                        <ul>
+                                            <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@sevenzoutsourcing.com" target="_blank" title="Email">
+                                                <ion-icon name="mail"></ion-icon>&nbsp;&nbsp; info@sevenzoutsourcing.com</a></li>
+                                            <li><ion-icon name="call"></ion-icon>&nbsp;&nbsp; +254 114 038747</li>
+                                            <li><a href="https://maps.app.goo.gl/Bv3VZdSQyydiA4eB7" target="_blank" title="Map">
+                                                <ion-icon name="location"></ion-icon>&nbsp;&nbsp; West Park Suites, 3rd Floor,303B, Ojijo Close, Westlands. <br>
+                                                P.O. BOX 50194 - 00100, Nairobi, Kenya
+</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- .row end -->
+                    
+                </div>
+                <!-- .footer-widgets end -->
+                
+            </div>
+            <!-- .container end -->
+            
+        </div>
+        <!-- #bottom end -->
+        
+        <!-- #footer -->
+        <footer id="footer" class="footer-3">
+            
+            <!-- .container -->
+            <div class="container">
+                
+                <p>All rights reserved &copy; <span id="copyright-year"></span> by <a href="https://sevenzoutsourcing.com" target="_blank" rel="noopener">Sevenz Advisory & Outsourcing Solutions Ltd</a></p>
+                    <script>
+                      document.getElementById("copyright-year").textContent = new Date().getFullYear();
+                    </script>
+                
+            </div>
+            <!-- .container end -->
+            
+        </footer>
+        <!-- #footer end -->
+        
+    </div>
+    <!-- #body-wrap end -->
+    
+    <a href="#" class="scrollup" title="Back to Top!"><ion-icon name="arrow-up"></ion-icon></a> <!-- Back to Top -->
+    
+        
+    <!-- JavaScripts -->
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/jquery.plugin.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/response.min.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scroll-with-ease.js"></script>
+	<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollbar.min.js"></script>
+	<script type="text/javascript" src="js/parallax.min.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox-media.js"></script>
+	<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+    
+    <!-- Current Page Scripts -->
+	<script type="text/javascript" src="js/jquery.sliderPro.min.js"></script>
+    <script type="text/javascript">
+	var $ = window.jQuery;
+	var $window = $(window);
+	var $sliderPro = $('#header .slider-pro');
+	
+	$sliderPro.sliderPro({
+		width: 1920,
+		height: 900,
+		forceSize: 'fullWidth',
+		slideDistance: 0,
+		autoScaleLayers: false,
+		breakpoints: {
+			1820: {
+				height: 950
+			},
+			1720: {
+				height: 1000
+			},
+			1620: {
+				height: 1050
+			},
+			1520: {
+				height: 1100
+			},
+			1420: {
+				height: 1150
+			},
+			1320: {
+				height: 1200
+			},
+			1220: {
+				height: 1250
+			},
+			1120: {
+				height: 1300
+			},
+			1020: {
+				height: 1350
+			},
+			974: {
+				height: 1350,
+				forceSize: 'none'
+			},
+			920: {
+				height: 1400,
+				forceSize: 'none'
+			},
+			820: {
+				height: 1450,
+				forceSize: 'none'
+			},
+			750: {
+				height: 1500,
+				forceSize: 'none'
+			},
+			650: {
+				height: 1600,
+				forceSize: 'none'
+			},
+			550: {
+				height: 1700,
+				forceSize: 'none'
+			},
+			450: {
+				height: 2000,
+				forceSize: 'none'
+			},
+			350: {
+				height: 2800,
+				forceSize: 'none'
+			},
+			300: {
+				height: 3200,
+				forceSize: 'none'
+			}
+		}
+	});
+	
+	$sliderPro.on('gotoSlideComplete', function() {
+		$window.trigger('resize.px.parallax');
+	});
+    </script>
+    
+</body>
+</html>

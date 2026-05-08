@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Your Basic Site Informations -->
+    <title>Sevenz Advisory & Outsourcing </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Sevenz Advisory & Outsorcing helps you in all your accounting needs & in business advisory.">
+    <meta name="keywords"
+        content="Accountant in Nairobi, Income tax, Quick books, Tax return, Bookkeeping, BPO, outsourcing websites, CPA, VAT, Business Setup, Business Advisory">
+    <meta name="author" content="Sevenz">
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Roboto:100,300,300i,400,400i,500,700,900"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/jquery.scrollbar.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/slider-pro.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Custom Colors -->
+    <link rel="stylesheet" href="css/colors/blue/color.css">
+    <!--<link rel="stylesheet" href="css/colors/orange/color.css">-->
+    <!--<link rel="stylesheet" href="css/colors/pink/color.css">-->
+    <!--<link rel="stylesheet" href="css/colors/purple/color.css">-->
+    <!--<link rel="stylesheet" href="css/colors/yellow/color.css">-->
+
+    
+    <noscript>
+        <link rel="stylesheet" href="css/no-js.css">
+    </noscript>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- Font Awesome CDN -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+ <!-- Social icons -->
+ <style>
+  :root{
+    --icon-size: 25px;    /* change globally */
+    --gap: 12px;
+    
+  }
+
+ </style>
+
+</head>
+
+<body>
+
+    <div class="call-float-wrapper">
+  <a href="tel:+254114038747" class="call-float" id="callBtn">
+    <i class="fas fa-phone call-icon"></i>
+    <span class="call-badge">Call Us</span>
+  </a>
+
+  
+  <div class="call-popup" id="callPopup">
+    <div class="call-popup-content">
+      <p><strong>Call us:</strong></p>
+      <p class="phone-number">+254 114 038 747</p>
+      <button class="copy-btn" onclick="copyPhone()">
+        <i class="fas fa-copy"></i> Copy
+      </button>
+      <button class="close-popup" onclick="document.getElementById('callPopup').style.display='none'">
+        ×
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Detect if mobile (has tel: support)
+  const isMobile = /iPhone|iPad|iPod|Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  const callBtn = document.getElementById('callBtn');
+  const popup = document.getElementById('callPopup');
+
+  if (!isMobile) {
+    callBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      popup.style.display = 'block';
+    });
+  }
+
+  // Copy to clipboard
+  function copyPhone() {
+    navigator.clipboard.writeText('+254114038747').then(() => {
+      const btn = document.querySelector('.copy-btn');
+      const original = btn.innerHTML;
+      btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+      setTimeout(() => btn.innerHTML = original, 2000);
+    });
+  }
+</script>
+
+    <!-- #nav-mobile -->
+<nav id="nav-mobile">
+    <div class="scrollbar-inner">
+        <button type="button" class="navbar-btn-close"><ion-icon name="close-sharp" size="large" class="close"></ion-icon></button>
+        <div class="navbar-menu">
+            <ul class="nav">
+                <li class="menu-item current-menu-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="aboutus.html">About Us</a>
+                </li>
+<li class="menu-item mega-menu-item menu-item-has-children">
+     <a href="#">Services <ion-icon name="chevron-down" class="toggle-sub"></ion-icon></a>
+    <div class="sub-mega-menu">
+    <div class="container">
+      <div class="mega-columns">
+
+        <div class="mega-column">
+          <a href="BusinessManagement.html">Business Management & Consultancy</a>
+          <a href="Management.html">Management Trainings</a>
+          <a href="RecordManagement.html">Records Management & Training</a>
+          <a href="CreditManagement.html">Credit Management Services</a>
+          <a href="OutsourcedCFO.html">Outsourced CFO Services</a>
+          <a href="Bookkeeping.html">Book-keeping Services</a>
+          <a href="Virtualbackend.html">Virtual Back End Support</a>
+          <a href="Local.html">Local Office Representation</a>
+          <a href="SupplyChain.html">Supply Chain Management Advisory</a>
+          <a href="MarketingManagement.html">Marketing Management Advisory</a>
+          <a href="OutsourcedIT.html">Outsourced IT Solutions</a>
+                  
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+
+
+<li class="menu-item mega-menu-item menu-item-has-children">
+  <a href="#">Industries &nbsp; <ion-icon name="chevron-down" class="toggle-sub"></ion-icon></a>
+  <div class="sub-mega-menu">
+    <div class="container">
+      <div class="mega-columns">
+        <div class="mega-column">
+          <a href="FinancialServices.html">Financial Services</a>
+          <a href="Healthcare.html">Healthcare</a>
+          <a href="Manufacturing.html">Manufacturing</a>
+          <a href="EducationSector.html">Education Sector</a>
+          <a href="Technology.html">Technology</a>
+          <a href="Retail&Consumer.html">Retail & Consumer Goods</a>
+          <a href="Hospitality.html">Hospitality & Tourism</a>
+          <a href="ProfessionalServices.html">Professional Services</a>
+          <a href="Energy&Utilities.html">Energy & Utilities</a>
+          <a href="Agriculture.html">Agriculture</a>
+          <a href="Tradeindustry.html">Trade Industry</a>
+          <a href="BeautyIndustry.html">Beauty Industry</a>
+          <a href="Realestate.html">Real Estate & Constructions</a>
+          <a href="Nonprofit.html">Non Profit & Public Sectors</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+
+<li class="menu-item mega-menu-item menu-item-has-children">
+    <a href="OAS.html">Our Partners <ion-icon name="chevron-down" class="toggle-sub"></ion-icon></a>
+
+    <div class="sub-mega-menu">
+    <div class="container">
+      <div class="mega-columns">
+
+        <div class="mega-column">
+          <a href="OAS.html">A ONE OUTSOURCING ACCOUNTING</a>
+          <a href="odoo.html">ODOO</a>
+          <!-- <a href="bizkit.html">BIZKIT</a> -->
+          
+          
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+                </li>
+                <li>
+                    <a href="FreeConsultation.html">Consultation</a>
+                </li>
+                <li>
+                    <a href="contactus.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- #nav-mobile end -->
+    <!-- #nav-mobile end -->
+
+    <!-- #body-wrap -->
+    <div id="body-wrap">
+
+        <!-- #header -->
+        <header id="header">
+
+            <!-- #nav-mobile-top -->
+            <div id="nav-mobile-top">
+
+                <!-- .container -->
+                <div class="container-fluid">
+                    <div class="navmenu">
+
+                        <button type="button" class="navbar-btn-toggle"><ion-icon name="menu"></ion-icon></button>
+
+                        <div class="navbar-logo">
+                            <a href="index.html"><img src="images/sevenzlogo.png" alt="Logo"></a> <!-- site logo -->
+                        </div>
+
+                    </div>
+                </div>
+                <!-- .container end -->
+
+            </div>
+            <!-- #nav-mobile-top end -->
+
+            <!-- #navigation -->
+            <nav id="navigation">
+
+                <!-- .navtop -->
+                <div class="navtop">
+
+                    <!-- .container -->
+                    <div class="container">
+
+                        <div class="nav-txt">
+                            <p><ion-icon name="phone-portrait"></ion-icon> Call Us On: <strong><a
+                                        href="#"><u>+254 114 038747</u> | </a></strong>
+                                <strong>Email: </strong><a style="text-decoration: none;"
+                                    href="https://mail.google.com/mail/?view=cm&fs=1&to=info@sevenzoutsourcing.com"
+                                    target="_blank"><u> info@sevenzoutsourcing.com</u></a> <br>
+                                    
+                            </p>
+                        </div>
+
+                        <div class="social-links" aria-label="Social links">
+                            <a href="https://www.facebook.com/profile.php?id=61558659546728" target="_blank" title="Facebook"><ion-icon name="logo-facebook" style="font-size: large;"></ion-icon></a>
+                            <a href="https://www.tiktok.com/@sevenzoutsourcing" target="_blank" title="Tiktok"><ion-icon name="logo-tiktok" style="font-size: large;"></ion-icon></a>
+                            <a href="https://www.x.com/sevenzadvisory" target="_blank" title="X">
+                                <svg class="x-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="white" aria-hidden="true">
+                               <path d="M18.244 2H21.5l-7.557 8.5L22 22h-5.657l-4.6-6.1L6.8 22H3.5l8.064-9.083L2 2h5.743l4.147 5.523L18.244 2zm-2.05 18h2.215L8.84 4h-2.3l9.654 16z"/>
+                            </svg> </a>
+                            <a href="https://www.instagram.com/sevenzoutsourcing" target="_blank" title="Instagram"><ion-icon name="logo-instagram" style="font-size: large;"></ion-icon></a>
+                            <a href="https://www.linkedin.com/company/sevenzy-advisory-and-outsourcing-solutions-ltd" target="_blank" title="LinkedIn"><ion-icon name="logo-linkedin" style="font-size: large;"></ion-icon></a>
+                            <a href="https://www.youtube.com/sevenzoutsourcing" target="_blank" title="Youtube"><ion-icon name="logo-youtube" style="font-size: large;"></ion-icon></a>
+                            
+                        </div>
+
+                    </div>
+                    <!-- .container end -->
+
+                </div>
+                <!-- .navtop end -->
+
+                <!-- .navbar -->
+                <div class="navbar">
+
+                    <!-- .container -->
+                    <div class="container">
+                        <div class="navbar-wrap">
+
+                            <div class="navbar-logo">
+                                <a href="index.html"><img src="images/sevenzlogo.png" alt="Logo"></a> <!-- site logo -->
+                            </div>
+
+                            <div class="navbar-menu">
+                                <ul class="nav">
+                                    <li class="current-menu-item">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="aboutus.html">About Us</a>
+                                    </li>
+
+<li class="menu-item mega-menu-item menu-item-has-children">
+  <a href="BusinessManagement.html">Services<ion-icon name="chevron-down"></ion-icon></a>
+
+  <div class="sub-mega-menu">
+    <div class="container">
+      <div class="mega-columns">
+
+        <!-- Column 1 -->
+        <div class="mega-column">
+          <h4>Business Advisory</h4>
+          <ul>
+            <li><a href="BusinessManagement.html">Business Management & Consultancy</a></li>
+            <li><a href="Management.html">Management Trainings</a></li>
+            <li><a href="RecordManagement.html">Records Management & Training</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="mega-column">
+          <h4>Financial & Administrative</h4>
+          <ul>
+            <li><a href="CreditManagement.html">Credit Management Services</a></li>
+            <li><a href="OutsourcedCFO.html">Outsourced CFO Services</a></li>
+            <li><a href="Bookkeeping.html">Book-keeping Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="mega-column">
+          <h4>Operations Support</h4>
+          <ul>
+            <li><a href="Virtualbackend.html">Virtual Back End Support</a></li>
+            <li><a href="Local.html">Local Office Representation</a></li>
+            <li><a href="SupplyChain.html">Supply Chain Management Advisory</a></li>
+            <li><a href="MarketingManagement.html">Marketing Management Advisory</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="mega-column">
+          <h4>Technology Solutions</h4>
+          <ul>
+            <li><a href="OutsourcedIT.html">Outsourced IT Solutions</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</li>
+
+                                        <li class="menu-item mega-menu-item menu-item-has-children">
+                                        <a href="FinancialServices.html">Industries<ion-icon name="chevron-down"></ion-icon></a>
+                                        <div class="sub-mega-menu">
+                                            <div class="container">
+                                                <ul>
+                                                    <li class="menu-item menu-item-has-children current-menu-item">
+
+                                                        <ul>
+                                                            <li class="menu-item current-menu-item"><a
+                                                                    href="FinancialServices.html">FINANCIAL SERVICES</a>
+                                                            </li>
+                                                            <li class="menu-item"><a
+                                                                    href="Healthcare.html">HEALTHCARE</a></li>
+                                                            <li class="menu-item"><a
+                                                                    href="Manufacturing.html">MANUFACTURING</a></li>
+                                                            <li class="menu-item"><a
+                                                                    href="EducationSector.html">EDUCATION SECTOR</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="menu-item menu-item-has-children">
+
+                                                        <ul>
+                                                            <li class="menu-item"><a
+                                                                    href="Technology.html">TECHNOLOGY</a></li>
+                                                            <li class="menu-item"><a href="Retail&Consumer.html">RETAIL
+                                                                    & CONSUMER GOODS</a></li>
+                                                            <li class="menu-item"><a href="Hospitality.html">HOSPITALITY
+                                                                    & TOURISM</a></li>
+                                                            <li class="menu-item"><a
+                                                                    href="ProfessionalServices.html">PROFESSIONAL
+                                                                    SERVICES</a></li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="menu-item menu-item-has-children">
+
+                                                        <ul>
+                                                            <li class="menu-item"><a href="Energy&Utilities.html">ENERGY
+                                                                    & UTILITIES</a></li>
+                                                            <li class="menu-item"><a
+                                                                    href="Agriculture.html">AGRICULTURE</a></li>
+                                                            <li class="menu-item"><a href="Tradeindustry.html">TRADE
+                                                                    INDUSTRY</a></li>
+                                                            <li class="menu-item"><a href="BeautyIndustry.html">BEAUTY
+                                                                    INDUSTRY</a></li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="menu-item menu-item-has-children">
+
+                                                        <ul>
+                                                            <li class="menu-item"><a href="Realestate.html">REAL ESTATE
+                                                                    & CONSTRUCTIONS</a></li>
+                                                            <li class="menu-item"><a href="Nonprofit.html">NON PROFIT &
+                                                                    PUBLIC SECTORS</a></li>
+                                                        </ul>
+                                                    </li>
+
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+<li class="menu-item mega-menu-item menu-item-has-children">
+  <a href="#">Partners<ion-icon name="chevron-down"></ion-icon></a>
+
+  <div class="sub-mega-menu">
+    <div class="container">
+      <div class="mega-columns">
+
+        <div class="mega-column">
+          <h4><a href="OAS.html">A ONE OUTSOURCING ACCOUNTING SERVICES</a></h4>
+															        
+        </div>
+        <div class="mega-column">
+          <h4><a href="odoo.html">ODOO</a></h4>
+          
+        </div>
+        <!-- <div class="mega-column">
+          <h4><a href="bizkit.html">BIZKIT</a></h4>
+          
+        </div> -->
+         
+
+     </div>
+    </div>
+  </div>
+</li>
+
+                                    <li>
+                                        <a href="FreeConsultation.html">Consultation</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="contactus.html">Contact Us</a>
+
+                                    </li>
+                                </ul>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- .container end -->
+
+                </div>
+                <!-- .navbar end -->
+
+            </nav>
+            <!-- #navigation end -->
+
+            <!-- .slider-pro -->
+            <div class="slider-pro">
+                <div class="sp-slides">
+
+                    <div class="sp-slide"> <!-- 1 -->
+                        <img class="sp-image" src="images/blank.gif" data-src="images/content/sliders/4.jpg"
+                            alt="Image">
+                        <div class="header-overlay">
+                            <div class="container">
+                                <div class="header-txt header-txt-left">
+                                    <h1 class="sp-layer sp-layer-1" data-show-transition="right" data-show-delay="400">
+                                        Empowering Businesses for Success </h1>
+                                    <p class="sp-layer sp-layer-2" data-show-transition="right" data-show-delay="700">
+                                        <span style="color: navy;"><b>Your Trusted Advisors Since 2012.</b></span></p>
+                                    <div class="sp-layer sp-layer-3" data-show-transition="up" data-show-delay="1000">
+                                        <a href="contactus.html" class="btn-custom  btn-blue">Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sp-slide"> <!-- 2 -->
+                        <img class="sp-image" src="images/blank.gif" data-src="images/content/sliders/2.jpg"
+                            alt="Image">
+                        <div class="header-overlay header-overlay70">
+                            <div class="container">
+                                <div class="header-txt header-txt-center">
+                                    <h1 class="sp-layer sp-layer-1" data-show-transition="down" data-show-delay="400">
+                                        Tailored Solutions for Every Business Challenge</h1>
+                                    <h2 class="sp-layer sp-layer-2" data-show-transition="down" data-show-delay="700">
+                                        <span style="color: navy;">Have Business or Create A New Business Now?</span>
+                                    </h2>
+                                    <div class="sp-layer sp-layer-3" data-show-transition="up" data-show-delay="1000">
+                                        <a href="FreeConsultation.html" class="btn-custom btn-border btn-blue">Start Business</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sp-slide"> <!-- 3 -->
+                        <img class="sp-image" src="images/blank.gif" data-src="images/content/sliders/3.jpg"
+                            alt="Image">
+                        <div class="header-overlay header-overlay50">
+                            <div class="container">
+                                <div class="header-txt header-txt2 header-txt-right">
+                                    <h1 class="sp-layer sp-layer-1" data-show-transition="left" data-show-delay="400">
+                                        From Strategy</h1>
+                                    <h2 class="sp-layer sp-layer-2" data-show-transition="left" data-show-delay="700">
+                                        to Execution</h2>
+                                    <p class="sp-layer sp-layer-3" data-show-transition="left" data-show-delay="1000">
+                                        <b> Where Expertise Meets Excellence: Driving Your Success Story Forward. Partnering
+                                            for Sustainable Growth</b></p>
+                                    <div class="sp-layer sp-layer-4" data-show-transition="up" data-show-delay="1300">
+                                        <a href="contactus.html" class="btn-custom btn-blue">Learn More<ion-icon
+                                                name="arrow-right"></ion-icon></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- .slider-pro end -->
+
+        </header>
+        <!-- #header end -->
+
+        <!-- #features -->
+        <div id="features" class="section-wrap padding-top80 padding-bottom40">
+
+            <!-- .container -->
+            <div class="container">
+
+                <!-- .row -->
+                <div class="row">
+
+                    <div class="col-sm-4"> <!-- 1 -->
+                        <div class="affa-feature-icon">
+                            <ion-icon name="laptop-outline" class="laptop-icon"></ion-icon>
+                            <style>
+                                .laptop-icon {
+                                    font-size: 70px;
+                                    color: gray;
+                                    animation: bounce 2s infinite;
+                                }
+                            </style>
+
+                            <h4>Client Education</h4>
+                            <p>We not only provide services but also educate clients about financial matters, empowering
+                                them to make informed decisions and better manage their finances.</p>
+                            <a href="FreeConsultation.html">Learn More <i class="ion ion-arrow-right-b"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4"> <!-- 2 -->
+                        <div class="affa-feature-icon">
+                            <ion-icon name="happy-outline" class="laptop-icon" data-delay="300"></ion-icon>
+                            <h4>Comprehensive Services</h4>
+                            <p>We offer a wide range of services including financial reporting, tax planning, auditing,
+                                business advisory, risk management, and more, catering to the diverse needs of
+                                businesses.</p>
+                            <a href="BusinessManagement.html">Learn More <i class="ion ion-arrow-right-b"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4"> <!-- 3 -->
+                        <div class="affa-feature-icon">
+                            <ion-icon name="settings-outline" class="laptop-icon" data-delay="600"></ion-icon>
+                            <h4>Customized Solutions</h4>
+                            <p>We provide tailored solutions that are specifically designed to address the unique
+                                challenges and goals of each client, ensuring maximum value and effectiveness.</p>
+                            <a href="contactus.html">Learn More <i class="ion ion-arrow-right-b"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- .row -->
+
+            </div>
+            <!-- .container end -->
+
+        </div>
+        <!-- #features end -->
+
+        <!--Who We Are-->
+
+        <section class="about-section">
+            <!-- Left text -->
+            <div class="about-text">
+                <h2>Who We Are</h2>
+                <p>Sevenz Advisory & Outsourcing Solutions Ltd is a professional outsourcing and business management
+                    firm dedicated to helping organizations achieve efficiency, growth, and long-term success. We
+                    provide tailored solutions in consultancy, training, financial management, IT, marketing, and
+                    back-office support — enabling businesses to focus on what matters most.</p>
+                <a href="aboutus.html">Learn More About Us →</a>
+            </div>
+
+            <!-- Right stats -->
+            <div class="stats">
+                <div class="stat-box">
+                    <h3 id="projects">0</h3>
+                    <p>PROJECTS</p>
+                </div>
+                <div class="stat-box">
+                    <h3 id="clients">0</h3>
+                    <p>CLIENTS</p>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // Counter function
+            function animateCounter(id, target, duration, suffix = "+") {
+                const element = document.getElementById(id);
+                let start = 0;
+                const increment = target / (duration / 16); // approx 60fps
+
+                function updateCounter() {
+                    start += increment;
+                    if (start < target) {
+                        element.textContent = Math.floor(start) + suffix;
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        element.textContent = target + suffix;
+                    }
+                }
+
+                updateCounter();
+            }
+
+            // Run animations
+            animateCounter("projects", 110, 2000);
+            animateCounter("clients", 13, 2500);
+        </script>
+
+        <!-- #features2 -->
+        <div id="features2" class="bg-white section-wrap padding-top80 padding-bottom80-xs">
+
+
+
+            <!-- .container -->
+            <div class="container">
+
+
+
+                <!-- .row -->
+                <div class="row">
+
+                    <div class="col-sm-6 col-md-5 col-lg-4 col-md-offset-0 col-lg-offset-1 img-padding-xs">
+                        <figure>
+                            <img src="images/team.jpg" alt="Image">
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-5 col-sm-offset-0 col-md-offset-1">
+                        <div class="padding-top60 padding-top60-sm padding-top0-xs">
+                            <div class="post-heading-left text-center-xs">
+                                <b>
+                                    <h2>Great Expertise</h2>
+                                </b>
+                            </div>
+                            <p>We have a team of highly skilled professionals with expertise in various aspects of
+                                accounting, finance, business management and software implementation. We help businesses develop strategic plans
+                                for growth, expansion, and sustainability, leveraging our expertise to identify
+                                opportunities and mitigate risks.</p>
+                            <div class="list-icon margin-bottom0">
+                                <ul>
+                                    <li><ion-icon name="checkmark-circle"></ion-icon>&nbsp;&nbsp; We adheres to the
+                                        highest ethical standards</li>
+                                    <li><ion-icon name="checkmark-circle"></ion-icon>&nbsp;&nbsp; Advanced technology
+                                        and software solutions</li>
+                                    <li><ion-icon name="checkmark-circle"></ion-icon>&nbsp;&nbsp; Up-to-date with the
+                                        latest regulatory requirements</li>
+                                    <li><ion-icon name="checkmark-circle"></ion-icon>&nbsp;&nbsp; We focus on building
+                                        long-term relationships with our Client</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- .row end -->
+
+            </div>
+            <!-- .container end -->
+
+        </div>
+        <br><br>
+        <!-- #features2 end -->
+
+        <!--Our Clients and Partners-->
+        <div id="clients" class="clients">
+            <h2>Our Clients</h2>
+            <div class="slideshow-container"> <br>
+                <div class="slider">
+
+                    <img src="images/Biocare Health Systems Ltd..png">
+                    <img src="images/Dafari Property Developers Ltd..jpg">
+                    <img src="images/DigiPath Africa.png">
+                    <img src="images/Bolena Enterprises Limited.png">
+                    <!-- <img src="images/D LADY BOSS LUXURY BOUTIQUE PRE  OWNED TRADING.jpg"> -->
+                    <img src="images/Dellavee organics Ltd.png">
+                    <!-- <img src="" alt="Make Up Cityy">
+                    <img src="" alt="Luxury Vault Boutique"> -->
+
+
+                    <img src="images/Biocare Health Systems Ltd..png">
+                    <img src="images/Dafari Property Developers Ltd..jpg">
+                    <img src="images/DigiPath Africa.png">
+                    <img src="images/Bolena Enterprises Limited.png">
+                    <!-- <img src="images/D LADY BOSS LUXURY BOUTIQUE PRE  OWNED TRADING.jpg"> -->
+                    <img src="images/Dellavee organics Ltd.png">
+                    <!-- <img src="" alt="Make Up Cityy">
+                    <img src="" alt="Luxury Vault Boutique"> -->
+
+
+                </div>
+            </div>
+            <br><br>
+
+            <h2>Our Partners</h2>
+            <div class="slideshow-container"> <br>
+                <div class="slider">
+                    <img src="images/odoo_learning_partner.webp">
+                    <!-- <img src="images/bizkit.png"> -->
+
+
+                    <img src="images/odoo_learning_partner.webp">
+                    <!-- <img src="images/bizkit.png"> -->
+                </div>
+            </div>
+        </div>
+
+
+        <!--Testimonial(reviwes)-->
+
+        <section class="reviews-section">
+            <h2>What Our Clients Say</h2>
+            <p>Here’s what some of our satisfied clients have shared about working with us.</p>
+
+            <div class="reviews-container"> 
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/Biocare Health Systems Ltd..png" alt="Client Photo">
+                        <div>
+                            <h3>Biocare Health Systems Ltd</h3>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        Sevenz Advisory transformed the way we manage our business operations. Their outsourcing
+                        solutions saved us time and costs.
+                    </p>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/Dafari Property Developers Ltd..jpg" alt="Client Photo">
+                        <div>
+                            <h3>Dafari Property Developers Ltd</h3>
+                            <div class="stars">★★★★☆</div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        Professional, reliable, and efficient. We especially loved their outsourced CFO services — a
+                        real game-changer for our finances.
+                    </p>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="images/Bolena Enterprises Limited.png" alt="Client Photo">
+                        <div>
+                            <h3>Bolena Enterprises Limited</h3>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        The team is supportive and responsive. They helped us scale smoothly with expert back-office
+                        support. Highly recommended!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- #buynow -->
+        <div id="buynow" class="bg-color text-white padding-top40 padding-bottom40">
+
+            <!-- .container -->
+            <div class="container">
+
+                <div class="affa-call-action">
+                    <h2>Are you ready to take it to the next level?</h2>
+                    <a href="contactus.html" class="btn-custom btn-border btn-white">Contact Us Now</a>
+                </div>
+
+            </div>
+            <!-- .container end -->
+
+        </div>
+        <!-- #buynow -->
+
+        <!-- #bottom -->
+
+
+        <!--WhatsApp button-->
+
+<a href="https://wa.me/254114038747?text=Hello%20Sevenz%20Advisory!%20I%20need%20help%20with..." 
+   class="whatsapp-float" 
+   target="_blank">
+  <ion-icon name="logo-whatsapp" class="whatsapp-icon"></ion-icon>
+</a>
+
+        <!--Live Chat (chatbot)-->
+
+<!-- Chat Button -->
+<img src="images/chat.jpg" alt="" class="chatBtn" id="chatBtn">
+<!-- Chat Window -->
+<div class="chat-window" id="chatWindow">
+  <div class="chat-header">SAOS Live Support<br><p style="font-size: 75%;" >(Click LiveChat button to Close)</p></div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="Type your message..." />
+    <button id="sendBtn1">Send</button>
+  </div>
+</div>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<script>
+  const chatBtn = document.getElementById("chatBtn");
+  const chatWindow = document.getElementById("chatWindow");
+  const chatBody = document.getElementById("chatBody");
+  const userInput = document.getElementById("userInput");
+  const sendBtn1 = document.getElementById("sendBtn1");
+
+  let step = 0;
+  let userName = "", userService = "Financial Management", userEmail = "", userNumber = "";
+
+  chatBtn.addEventListener("click", () => {
+    chatWindow.style.display = chatWindow.style.display === "flex" ? "none" : "flex";
+    if (step === 0) {
+      addMessage("Hello! Welcome to Sevenz Advisory & Outsourcing Solutions Ltd.", "bot");
+      setTimeout(() => addMessage("May I know your name?", "bot"), 1000);
+      step = 1;
+    }
+  });
+
+  sendBtn1.addEventListener("click", sendMessage);
+  userInput.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") sendMessage();
+  });
+
+  function sendMessage() {
+    const msg = userInput.value.trim();
+    if (!msg) return;
+    addMessage(msg, "user");
+    userInput.value = "";
+    setTimeout(() => handleBotResponse(msg), 700);
+  }
+
+  function addMessage(text, sender) {
+    const message = document.createElement("div");
+    message.classList.add("message", sender);
+    message.textContent = text;
+    chatBody.appendChild(message);
+    chatBody.scrollTop = chatBody.scrollHeight;
+  }
+
+  function handleBotResponse(userMsg) {
+    if (step === 1) {
+      userName = userMsg;
+      addMessage(`Hi ${userName}! How can we assist you today?`, "bot");
+      step = 2;
+    } else if (step === 2) {
+      userService = userMsg;
+      addMessage("Okay, your request has been shared with our team. Kindly share your email and number for quick contact. (Separate them with a comma)", "bot");
+      step = 3;
+    } else if (step === 3) {
+      const parts = userMsg.split(",");
+      if (parts.length < 2) {
+        addMessage("Please provide both your email and phone number, separated by a comma.", "bot");
+        return;
+      }
+
+      userEmail = parts[0].trim();
+      userNumber = parts[1].trim();
+
+      // Validate email format
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!emailPattern.test(userEmail)) {
+        addMessage("Invalid email format. Please enter a valid email like example@gmail.com", "bot");
+        return;
+      }
+
+      addMessage("Thank you for choosing us! You will be contacted ASAP.", "bot");
+        setTimeout(() => {
+      addMessage("You can also talk to one of our agents directly by dialling 0114038747 to jump the queue.", "bot");
+             }, 1000);
+      sendToFormspree();
+       step = 4;
+    }
+  }
+
+  function sendToFormspree() {
+    const data = {
+      name: userName,
+      email: userEmail,
+      number: userNumber,
+      service: userService
+    };
+
+    fetch("https://formspree.io/f/xkgqavqw", { 
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(data)
+    })
+    .then(res => console.log("Form submitted successfully"))
+    .catch(err => console.error("Error sending data:", err));
+  }
+</script>
+
+        <div id="bottom" class="bottom-3">
+
+            <!-- .container -->
+            <div class="container">
+
+                <!-- .footer-widgets -->
+                <div class="footer-widgets">
+
+                    <!-- .row -->
+                    <div class="row">
+
+                        <div class="col-sm-3">
+                            <div class="widget">
+                                <div class="widget_text">
+                                    <img src="images/logo-white.png" alt="Logo" class="margin-bottom20">
+                                    <p>Welcome to SEVENZ, where expertise meets experience in providing comprehensive
+                                        business solutions tailored to your needs. With over 12 years of dedicated
+                                        service, we have established ourselves as trusted advisors in the realms of
+                                        business management and consultancy.</p>
+                                    <div class="social-links1" aria-label="Social links">
+                            <a class="icon-facebook round" href="https://www.facebook.com/profile.php?id=61558659546728" target="_blank" title="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a class="icon-tiktok round" href="https://www.tiktok.com/@sevenzoutsourcing" target="_blank" title="Tiktok"><ion-icon name="logo-tiktok"></ion-icon></a>
+                            <a class="icon-x round" href="https://www.x.com/sevenzadvisory" target="_blank" title="X">
+                                <svg class="x-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" fill="grey" aria-hidden="true">
+                               <path d="M18.244 2H21.5l-7.557 8.5L22 22h-5.657l-4.6-6.1L6.8 22H3.5l8.064-9.083L2 2h5.743l4.147 5.523L18.244 2zm-2.05 18h2.215L8.84 4h-2.3l9.654 16z"/>
+                            </svg> </a>
+                            <a class="icon-instagram round" href="https://www.instagram.com/sevenzoutsourcing" target="_blank" title="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                            <a class="icon-linkedin round" href="https://www.linkedin.com/company/sevenzy-advisory-and-outsourcing-solutions-ltd" target="_blank" title="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+                            <a class="icon-youtube round" href="https://www.youtube.com/sevenzoutsourcing" target="_blank" title="Youtube"><ion-icon name="logo-youtube"></ion-icon></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="widget">
+                                <div class="widget_recent_entries">
+                                    <h4 class="widget-title">More Info</h4>
+                                    <ul>
+                                        <li><a href="OutsourcedCFO.html">Outsourced CFO Services</a></li>
+                                        <li><a href="BookKeeping.html">Book Keeping Services</a></li>
+                                        <li><a href="Management.html">Management Training</a></li>
+                                        <li><a href="OutsourcedIT.html">Outsourced IT Services</a></li>
+                                        <li><a href="Virtualbackend.html">Virtual Back end Support</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="widget">
+                                <div class="widget_recent_entries">
+                                    <h4 class="widget-title">More Links</h4>
+                                    <ul>
+                                        <li><a href="aboutus.html">About Us</a></li>
+                                        <li><a href="#">Privacy & Policy</a></li>
+                                        <li><a href="#">Terms of Service</a></li>
+                                        <li><a href="#">Terms & Conditions</a></li>
+                                        <li><a href="contactus.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="widget">
+                                <div class="widget_text">
+                                    <h4 class="widget-title">Contact Info</h4>
+                                    <p>Sevenz Advisory & Outsorcing Solutions Limited.</p>
+                                    <div class="list-icon">
+                                        <ul>
+                                            <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@sevenzoutsourcing.com" target="_blank" title="Email">
+                                                <ion-icon name="mail"></ion-icon>&nbsp;&nbsp; info@sevenzoutsourcing.com</li>
+                                            <li><ion-icon name="call"></ion-icon>&nbsp;&nbsp; +254 114 038747</li>
+                                            <li><a href="https://maps.app.goo.gl/Bv3VZdSQyydiA4eB7" target="_blank"
+                                                    title="Map">
+                                                    <ion-icon name="location"></ion-icon>&nbsp;&nbsp; West Park Suites, 3rd Floor, 303B, Ojijo Close, Westlands.
+                                                   <br> P.O BOX 50194 - 00100, Nairobi, Kenya</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- .row end -->
+
+                </div>
+                <!-- .footer-widgets end -->
+
+            </div>
+            <!-- .container end -->
+
+        </div>
+        <!-- #bottom end -->
+
+        <!-- #footer -->
+        <footer id="footer" class="footer-3">
+
+            <!-- .container -->
+            <div class="container">
+
+                <p>All rights reserved &copy; <span id="copyright-year"></span> by <a href="https://sevenzoutsourcing.com" target="_blank" rel="noopener">Sevenz Advisory & Outsourcing Solutions Ltd</a></p>
+                    <script>
+                      document.getElementById("copyright-year").textContent = new Date().getFullYear();
+                    </script>
+
+            </div>
+            <!-- .container end -->
+
+        </footer>
+        <!-- #footer end -->
+
+    </div>
+    <!-- #body-wrap end -->
+
+    <a href="#" class="scrollup" title="Back to Top!"><ion-icon name="arrow-up"></ion-icon></a> <!-- Back to Top -->
+
+    
+    <!-- JavaScripts -->
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/jquery.plugin.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/response.min.js"></script>
+    <script type="text/javascript" src="js/waypoints.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scroll-with-ease.js"></script>
+    <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="js/parallax.min.js"></script>
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-media.js"></script>
+    <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+
+    <!-- Mobile Nav javascript-->
+<script>
+// Mobile Menu Toggle
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.querySelector('.navbar-btn-toggle');
+    const closeButton = document.querySelector('.navbar-btn-close');
+    const mobileNav = document.getElementById('nav-mobile');
+    const toggleIcons = document.querySelectorAll('.toggle-sub');
+    const subMenuLinks = document.querySelectorAll('.sub-mega-menu a');
+
+    // Toggle mobile menu
+    toggleButton.addEventListener('click', () => {
+        mobileNav.classList.toggle('active');
+    });
+
+    closeButton.addEventListener('click', () => {
+        mobileNav.classList.remove('active');
+        document.querySelectorAll('.sub-mega-menu.active').forEach(subMenu => {
+            subMenu.classList.remove('active');
+        });
+        document.querySelectorAll('.toggle-sub.active').forEach(toggle => {
+            toggle.classList.remove('active');
+        });
+    });
+
+    // Toggle sub-menus
+    toggleIcons.forEach(icon => {
+        icon.addEventListener('click', (e) => {
+            e.preventDefault();
+            const parentLi = icon.closest('.menu-item-has-children');
+            const subMenu = parentLi.querySelector('.sub-mega-menu');
+            const isActive = subMenu.classList.contains('active');
+
+            document.querySelectorAll('.sub-mega-menu.active').forEach(otherSubMenu => {
+                if (otherSubMenu !== subMenu) {
+                    otherSubMenu.classList.remove('active');
+                    otherSubMenu.closest('.menu-item-has-children').querySelector('.toggle-sub').classList.remove('active');
+                }
+            });
+
+            subMenu.classList.toggle('active');
+            icon.classList.toggle('active');
+        });
+    });
+
+    // Close sub-menu when a link is clicked
+    subMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            const subMenu = link.closest('.sub-mega-menu');
+            const parentLi = subMenu.closest('.menu-item-has-children');
+            const toggle = parentLi.querySelector('.toggle-sub');
+
+            subMenu.classList.remove('active');
+            toggle.classList.remove('active');
+
+            // Optionally close mobile menu
+            // mobileNav.classList.remove('active');
+        });
+    });
+});
+</script>
+
+
+    <!-- Current Page Scripts -->
+    <script type="text/javascript" src="js/jquery.sliderPro.min.js"></script>
+    <script type="text/javascript">
+        var $ = window.jQuery;
+        var $window = $(window);
+        var $sliderPro = $('#header .slider-pro');
+
+        $sliderPro.sliderPro({
+            width: 1920,
+            height: 900,
+            forceSize: 'fullWidth',
+            slideDistance: 0,
+            autoScaleLayers: false,
+            breakpoints: {
+                1820: {
+                    height: 950
+                },
+                1720: {
+                    height: 1000
+                },
+                1620: {
+                    height: 1050
+                },
+                1520: {
+                    height: 1100
+                },
+                1420: {
+                    height: 1150
+                },
+                1320: {
+                    height: 1200
+                },
+                1220: {
+                    height: 1250
+                },
+                1120: {
+                    height: 1300
+                },
+                1020: {
+                    height: 1350
+                },
+                974: {
+                    height: 1350,
+                    forceSize: 'none'
+                },
+                920: {
+                    height: 1400,
+                    forceSize: 'none'
+                },
+                820: {
+                    height: 1450,
+                    forceSize: 'none'
+                },
+                750: {
+                    height: 1500,
+                    forceSize: 'none'
+                },
+                650: {
+                    height: 1600,
+                    forceSize: 'none'
+                },
+                550: {
+                    height: 1700,
+                    forceSize: 'none'
+                },
+                450: {
+                    height: 2000,
+                    forceSize: 'none'
+                },
+                350: {
+                    height: 2800,
+                    forceSize: 'none'
+                },
+                300: {
+                    height: 3200,
+                    forceSize: 'none'
+                }
+            }
+        });
+
+        $sliderPro.on('gotoSlideComplete', function () {
+            $window.trigger('resize.px.parallax');
+        });
+    </script>
+
+</body>
+
+</html>
