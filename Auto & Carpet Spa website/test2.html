@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auto & Carpet Spa by Jim</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    .navbar {
+      background: #1976d2;
+      color: white;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .navbar a, .navbar button {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 6px;
+      background: rgba(255,255,255,0.15);
+      border: none;
+      cursor: pointer;
+    }
+    .navbar a:hover, .navbar button:hover {
+      background: rgba(255,255,255,0.25);
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 24px 16px; }
+
+    h1, h2, h3 { color: #222; }
+
+    /* Filters */
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+      background: white;
+      padding: 16px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      margin-bottom: 32px;
+    }
+    .price-range { display: flex; align-items: center; gap: 12px; }
+    .price-range input {
+      width: 90px;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+    .search-bar { flex: 1; min-width: 220px; }
+    .search-bar input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+    select {
+      padding: 10px 14px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+    .view-toggle button {
+      font-size: 22px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px;
+    }
+
+    /* Services */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .services.list { grid-template-columns: 1fr; }
+    .service-card {
+      background: white;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+      transition: all 0.18s;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+    .service-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .services.list .service-card img { height: 140px; }
+    .card-content { padding: 16px; }
+    .service-card h3 { margin: 0 0 10px; font-size: 1.15rem; }
+    .service-card .price {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #2e7d32;
+      margin: 8px 0 12px;
+    }
+    .btn {
+      padding: 10px 18px;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .btn-add { background: #1976d2; color: white; }
+    .btn-add:hover { background: #1565c0; }
+
+    /* Cart page styles */
+    .breadcrumbs {
+      font-size: 14px;
+      color: #555;
+      margin: 16px 0;
+    }
+    .cart-section {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .order-overview { flex: 2; min-width: 420px; }
+    .summary { flex: 1; min-width: 320px; }
+    .cart-item {
+      background: white;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+    .item-title { margin: 0; font-size: 1.15rem; }
+    .item-price { font-weight: 700; color: #2e7d32; font-size: 1.2rem; }
+    .quantity-control {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 12px 0;
+    }
+    .qty-btn {
+      width: 36px; height: 36px;
+      border: 1px solid #ccc;
+      background: #f5f5f5;
+      border-radius: 6px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .qty-btn:hover { background: #e0e0e0; }
+    .qty-input {
+      width: 60px;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 8px;
+    }
+    .remove-btn {
+      color: #d32f2f;
+      background: none;
+      border: none;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .remove-btn:hover { text-decoration: underline; }
+
+    .summary-box {
+      background: white;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 24px;
+      position: sticky;
+      top: 80px;
+    }
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+    .summary-total {
+      font-size: 18px;
+      font-weight: bold;
+      border-top: 1px solid #eee;
+      padding-top: 16px;
+      margin-top: 12px;
+    }
+    .btn-checkout {
+      background: #8d5524;
+      color: white;
+      border: none;
+      padding: 16px;
+      font-size: 18px;
+      font-weight: bold;
+      width: 100%;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 20px 0;
+    }
+    .btn-checkout:hover { background: #a66f3a; }
+    .or-text { text-align: center; color: #777; margin: 16px 0; }
+    .continue-link { color: #1976d2; text-decoration: none; }
+    #cart-empty {
+      text-align: center;
+      padding: 80px 20px;
+      background: white;
+      border-radius: 10px;
+      border: 1px solid #e0e0e0;
+    }
+    .hidden { display: none !important; }
+
+    .page { display: none; }
+    #shop-page { display: block; }
+  </style>
+</head>
+<body>
+
+<!-- Navbar (appears on both pages) -->
+<div class="navbar">
+  <div>
+    <strong>Auto & Carpet Spa by Jim</strong>
+  </div>
+  <div>
+    <a href="#" onclick="showPage('shop')">Shop</a>
+    <a href="#" onclick="showPage('cart')">My Cart (<span id="cart-count">0</span>)</a>
+  </div>
+</div>
+
+<!-- SHOP PAGE -->
+<div id="shop-page" class="page container">
+  <h1>Our Services</h1>
+
+  <div class="filters">
+    <div class="price-range">
+      <label>Price:</label>
+      <input type="number" id="min-price" placeholder="Min" value="1" min="1"/>
+      <input type="number" id="max-price" placeholder="Max" value="100000"/>
+      <button onclick="filterServices()">Apply</button>
+    </div>
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search services..." onkeyup="filterServices()"/>
+    </div>
+    <div>
+      <select id="sort" onchange="sortServices()">
+        <option value="featured">Sort: Featured</option>
+        <option value="price-asc">Price: Low → High</option>
+        <option value="price-desc">Price: High → Low</option>
+        <option value="name-asc">Name: A-Z</option>
+      </select>
+      <span class="view-toggle">
+        <button onclick="toggleView('grid')">🖼️</button>
+        <button onclick="toggleView('list')">≡</button>
+      </span>
+    </div>
+  </div>
+
+  <div class="services grid" id="services-container">
+    <div class="service-card" data-id="1" data-name="Basic Car Wash" data-price="2000">
+      <img src="https://via.placeholder.com/300x160?text=Basic+Car+Wash" alt=""/>
+      <div class="card-content">
+        <h3>Basic Car Wash</h3>
+        <div class="price">KSh 2,000</div>
+        <button class="btn btn-add" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="service-card" data-id="2" data-name="Full Interior Cleaning" data-price="5000">
+      <img src="https://via.placeholder.com/300x160?text=Full+Interior+Cleaning" alt=""/>
+      <div class="card-content">
+        <h3>Full Interior Cleaning</h3>
+        <div class="price">KSh 5,000</div>
+        <button class="btn btn-add" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="service-card" data-id="3" data-name="Carpet Cleaning" data-price="3000">
+      <img src="https://via.placeholder.com/300x160?text=Carpet+Cleaning" alt=""/>
+      <div class="card-content">
+        <h3>Carpet Cleaning</h3>
+        <div class="price">KSh 3,000</div>
+        <button class="btn btn-add" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Add more service cards here -->
+  </div>
+</div>
+
+<!-- CART PAGE -->
+<div id="cart-page" class="page container">
+  <div class="breadcrumbs">
+    <strong>Review Order</strong> › <span>Delivery</span> › <span>Payment</span>
+  </div>
+
+  <h1>My Cart</h1>
+
+  <div id="cart-content">
+    <div class="cart-section">
+      <div class="order-overview">
+        <h2>Order overview</h2>
+        <!-- items inserted here -->
+      </div>
+
+      <div class="summary">
+        <div class="summary-box">
+          <div class="summary-row"><span>Delivery</span><span>-</span></div>
+          <div class="summary-row"><span>Subtotal</span><span id="subtotal">0.00 KSh</span></div>
+          <div class="summary-row"><span>Taxes (16%)</span><span id="taxes">0.00 KSh</span></div>
+          <div class="summary-row summary-total">
+            <span>Total</span><span id="total">0.00 KSh</span>
+          </div>
+
+          <button class="btn-checkout" onclick="goToCheckout()">Checkout ></button>
+
+          <div class="or-text">or</div>
+          <a href="#" class="continue-link" onclick="showPage('shop')">← Continue shopping</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cart-empty" class="hidden">
+    <h2>Your cart is empty</h2>
+    <p>No services added yet.</p>
+    <a href="#" class="continue-link" onclick="showPage('shop')">← Continue shopping</a>
+  </div>
+</div>
+
+<script>
+// ── Page Switching ─────────────────────────────────────────────────
+function showPage(pageId) {
+  document.querySelectorAll('.page').forEach(p => p.classList.add('hidden'));
+  document.getElementById(pageId + '-page').classList.remove('hidden');
+  if (pageId === 'cart') renderCart();
+}
+
+// ── Cart Logic ─────────────────────────────────────────────────────
+let cart = JSON.parse(localStorage.getItem('spa_cart')) || [];
+
+function saveCart() {
+  localStorage.setItem('spa_cart', JSON.stringify(cart));
+  document.getElementById('cart-count').textContent = cart.reduce((sum, i) => sum + i.quantity, 0);
+}
+
+function addToCart(btn) {
+  const card = btn.closest('.service-card');
+  const id    = card.dataset.id;
+  const name  = card.dataset.name;
+  const price = parseFloat(card.dataset.price);
+
+  let item = cart.find(i => i.id === id);
+  if (item) item.quantity += 1;
+  else      cart.push({ id, name, price, quantity: 1 });
+
+  saveCart();
+  alert(`${name} added to cart`);
+}
+
+function changeQty(btn, delta) {
+  const itemEl = btn.closest('.cart-item');
+  const id = itemEl.dataset.id;
+  const item = cart.find(i => i.id === id);
+  if (!item) return;
+
+  item.quantity = Math.max(1, item.quantity + delta);
+  saveCart();
+  renderCart();
+}
+
+function removeItem(btn) {
+  const itemEl = btn.closest('.cart-item');
+  const id = itemEl.dataset.id;
+  cart = cart.filter(i => i.id !== id);
+  saveCart();
+  renderCart();
+}
+
+function renderCart() {
+  const overview = document.querySelector('#cart-page .order-overview');
+  overview.innerHTML = '<h2>Order overview</h2>';
+
+  if (cart.length === 0) {
+    document.getElementById('cart-content').classList.add('hidden');
+    document.getElementById('cart-empty').classList.remove('hidden');
+    document.getElementById('subtotal').textContent = '0.00 KSh';
+    document.getElementById('taxes').textContent   = '0.00 KSh';
+    document.getElementById('total').textContent   = '0.00 KSh';
+    return;
+  }
+
+  document.getElementById('cart-content').classList.remove('hidden');
+  document.getElementById('cart-empty').classList.add('hidden');
+
+  let subtotal = 0;
+
+  cart.forEach(item => {
+    const div = document.createElement('div');
+    div.className = 'cart-item';
+    div.dataset.id = item.id;
+    div.innerHTML = `
+      <div class="item-header">
+        <h3 class="item-title">${item.name}</h3>
+        <span class="item-price">${(item.price * item.quantity).toFixed(2)} KSh</span>
+      </div>
+      <div class="quantity-control">
+        <button class="qty-btn" onclick="changeQty(this, -1)">−</button>
+        <input type="number" class="qty-input" value="${item.quantity}" readonly/>
+        <button class="qty-btn" onclick="changeQty(this, 1)">+</button>
+      </div>
+      <button class="remove-btn" onclick="removeItem(this)">Remove</button>
+    `;
+    overview.appendChild(div);
+    subtotal += item.price * item.quantity;
+  });
+
+  const taxes = subtotal * 0.16;
+  const total = subtotal + taxes;
+
+  document.getElementById('subtotal').textContent = `${subtotal.toFixed(2)} KSh`;
+  document.getElementById('taxes').textContent   = `${taxes.toFixed(2)} KSh`;
+  document.getElementById('total').textContent   = `${total.toFixed(2)} KSh`;
+}
+
+function goToCheckout() {
+  if (cart.length === 0) return alert("Cart is empty");
+  alert("→ Going to delivery & payment step (to be implemented)");
+  // window.location = "/checkout.html";
+}
+
+// ── Shop Filters & Sorting ─────────────────────────────────────────
+let allServices = [];
+
+function filterServices() {
+  const search = document.getElementById('search').value.toLowerCase().trim();
+  const min = parseFloat(document.getElementById('min-price').value) || 0;
+  const max = parseFloat(document.getElementById('max-price').value) || Infinity;
+
+  allServices.forEach(card => {
+    const name  = card.dataset.name.toLowerCase();
+    const price = parseFloat(card.dataset.price);
+    card.style.display = (name.includes(search) && price >= min && price <= max) ? '' : 'none';
+  });
+}
+
+function sortServices() {
+  const val = document.getElementById('sort').value;
+  const container = document.getElementById('services-container');
+  let sorted = [...allServices];
+
+  if (val === 'price-asc')      sorted.sort((a,b) => parseFloat(a.dataset.price) - parseFloat(b.dataset.price));
+  else if (val === 'price-desc') sorted.sort((a,b) => parseFloat(b.dataset.price) - parseFloat(a.dataset.price));
+  else if (val === 'name-asc')   sorted.sort((a,b) => a.dataset.name.localeCompare(b.dataset.name));
+
+  container.innerHTML = '';
+  sorted.forEach(el => container.appendChild(el));
+  filterServices();
+}
+
+function toggleView(mode) {
+  document.getElementById('services-container').classList.remove('grid','list');
+  document.getElementById('services-container').classList.add(mode);
+}
+
+// ── Init ───────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  allServices = Array.from(document.querySelectorAll('.service-card'));
+  saveCart(); // updates count
+  showPage('shop'); // start on shop
+});
+</script>
+
+</body>
+</html>
